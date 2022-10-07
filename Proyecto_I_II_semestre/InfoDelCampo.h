@@ -8,7 +8,6 @@ class InfoDelCampo
 public:
     InfoDelCampo();
     ~InfoDelCampo();
-
 private:
 
 };
