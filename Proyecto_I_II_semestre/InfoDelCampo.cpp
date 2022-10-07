@@ -13,7 +13,6 @@ void InfoDelCampo::setNCampo(int *value) {
 }
 
 int *InfoDelCampo::getNCampo() {
-
     return nullptr;
 }
 
