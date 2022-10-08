@@ -2,6 +2,8 @@
 class Cobro
 {
 private:
+    int prueba = 0;
+
     int HoraEntrada=0;
     int MinutoEntrada=0;
 
