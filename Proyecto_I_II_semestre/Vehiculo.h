@@ -1,4 +1,7 @@
 #pragma once
+#include <string>
+#include "Chofer.h"
+using namespace std;
 class Vehiculo
 {private:
 	string marca;
@@ -6,11 +9,11 @@ class Vehiculo
 	float tonelaje;
 	string color;
 	Chofer* chofer;
-	Vehiculo* vehiculo;
+	
 
 
 public:
-	Vehiculo(string marca = "", string placa = "", float tonelaje = 0, string color = "", Chofer* chofer = new Chofer(), Vehiculo* vehiculo = new Vehiculo());
+	Vehiculo(string marca , string placa , float tonelaje , string color , Chofer* chofer );
 	~Vehiculo();
 
 	void setMarca(string marca);
@@ -26,7 +29,6 @@ public:
     Chofer* getChofer() ;
     void setChofer(Chofer* chofer);
 
-	Vehiculo* getVehiculo() ;
-	void setVehiculo(Vehiculo* vehiculo);
+	
 };
 
