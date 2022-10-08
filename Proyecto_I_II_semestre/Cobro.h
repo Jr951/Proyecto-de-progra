@@ -2,24 +2,30 @@
 class Cobro
 {
 private:
-    int hora=0;
-    int minuto=0;
+    int HoraEntrada=0;
+    int MinutoEntrada=0;
+
+    int HoraSalida=0;
+    int MinutoSalida;
+
     double monto=0;
+
 public:
+
     Cobro();
-    Cobro(int hora,int minuto,double monto);
-    ~Cobro();
+    Cobro(int HoraEntrada,int MinutoEntrada,int HoraSalida,int MinutoSalida,double monto);
 
-    void setHora(int Hora);
-    void setMinutos(int Minutos);
-    void setMonto(double Monto);
+    void setHoraEntrada(int HoraEntradaP);
+    void setMinutoEntrada(int MinutoEntradaP);
+    void setHoraSalida(int HoraSalidaP);
+    void setMinutoSalida(int MinutoSalidaP);
+    void setMonto(double MontoP);
 
-    int getHora();
-    int getMinutos();
+    int getHoraEntrada();
+    int getMinuoEntrada();
+    int getHoraSalida();
+    int getMinutoSalida();
+
     double getMonto();
-
-
-
-
 };
 

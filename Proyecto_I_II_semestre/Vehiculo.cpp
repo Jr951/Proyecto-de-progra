@@ -26,7 +26,7 @@ Chofer* Vehiculo::getChofer() { return choferptr; }
 void Vehiculo::setChofer(Chofer* choferP) { choferptr = choferP; }
 
 Cobro* Vehiculo::getCobro() { return cobroptr; }
-void Vehiculo::setCobro(Cobro* cobroP) { cobroptr = cobroP; }
+void Vehiculo::setCobro(Cobro* cobroP) {cobroptr = cobroP; }
 
 
 

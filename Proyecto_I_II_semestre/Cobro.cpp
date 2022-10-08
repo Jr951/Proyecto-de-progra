@@ -2,21 +2,48 @@
 
 Cobro::Cobro() {}
 
-Cobro::Cobro(int horaP, int minutoP,double montoP) {}
+Cobro::Cobro(int HoraEntrada, int MinutoEntrada, int HoraSalida, int MinutoSalida, double monto) {}
 
-Cobro::~Cobro() {}
 
-void Cobro::setHora(int horaP) {hora=horaP;}
+void Cobro::setHoraEntrada(int HoraEntradaP) {
 
-void Cobro::setMinutos(int minutosP) {minuto=minutosP;}
+}
 
-void Cobro::setMonto(double montoP) {monto=montoP;}
+void Cobro::setMinutoEntrada(int MinutoEntradaP) {
 
-int Cobro::getHora() {return hora;}
+}
 
-int Cobro::getMinutos() {return minuto;}
+void Cobro::setHoraSalida(int HoraSalidaP) {
 
-double Cobro::getMonto() {return monto;}
+}
 
+void Cobro::setMinutoSalida(int MinutoSalidaP) {
+
+}
+
+void Cobro::setMonto(double MontoP) {
+
+}
+
+int Cobro::getHoraEntrada() {
+    return HoraEntrada;
+}
+
+int Cobro::getMinuoEntrada() {
+    return MinutoEntrada;
+}
+
+int Cobro::getHoraSalida() {
+    return HoraSalida;
+}
+
+int Cobro::getMinutoSalida() {
+    return MinutoSalida;
+}
+
+double Cobro::getMonto() {
+
+    return monto;
+}
 
 

@@ -6,7 +6,10 @@ int main(){
 	Parqueo Contenedor(3);
     int opcion = 0;
 
+    new Cobro(2,3,0);
+
     do {
+
         system("cls");
         cout << endl << endl;
         cout << "  Control de Parqueo   " << endl;
@@ -17,19 +20,19 @@ int main(){
         cout << "    3.  Ver campos en mantenimiento" << endl;
         cout << "    4.  Ingresar un vehiculo al parqueo" << endl;
         cout << "    5.  Cancelar la estancia en el lugar. Realizar el debido cobro del alquiler" << endl;
-        cout << "    6.  Ver solo los campos que están libres" << endl;
+        cout << "    6.  Ver solo los campos que estï¿½n libres" << endl;
         cout << "    7.  Saber la cantidad de vehiculos que existen en el parqueo" << endl;
         cout << "    8.  Saber la cantidad de campos libres en el parqueo" << endl;
         cout << "    9.  Saber la cantidad de campos ocupados en el parqueo" << endl;
         cout << "    10.Saber la cantidad de campos en mantenimiento en el parqueo" << endl;
-        cout << "    11. Saber la cantidad de vehículos que han ingresado en el dia" << endl;
+        cout << "    11. Saber la cantidad de vehï¿½culos que han ingresado en el dia" << endl;
         cout << "    12. Saber la cantidad de dinero que ha ingresado al parqueo este dia" << endl;
         cout << "    13. Saber la cantidad de dinero que ha ingresado, por un solo campo" << endl;
-        cout << "    14. Saber le tonelaje de los vehículos que hacen más uso del parqueo" << endl;
+        cout << "    14. Saber le tonelaje de los vehï¿½culos que hacen mï¿½s uso del parqueo" << endl;
         cout << "    15. Saber el porcentaje de ocupacion que tiene el parqueo" << endl;
         cout << "    16. - Mostrar la informacion de los vehiculos que han estado en un determinado campo" << endl;
-        cout << "    17. - Mostar la información de todos los vehiculos del parqueo" << endl;
-        cout << "    18. Mostrar los vehículos que se encuentran en el rango de tonelaje de 1.0 a 1.5 " << endl;
+        cout << "    17. - Mostar la informaciï¿½n de todos los vehiculos del parqueo" << endl;
+        cout << "    18. Mostrar los vehï¿½culos que se encuentran en el rango de tonelaje de 1.0 a 1.5 " << endl;
         cout << "    19. salir" << endl;
         cout << "    ============================================================" << endl;
         cout << " Digite una opcion" << endl;
@@ -107,17 +110,17 @@ int main(){
             cout << objetoInformacion->getNumAdultos() << endl;
             break; system("cls");
         case 9:
-            cout << "Mostrando la cantidad de niños en el hotel: " << endl;
+            cout << "Mostrando la cantidad de niï¿½os en el hotel: " << endl;
             cout << objetoInformacion->getNumNinnos() << endl;
             break; system("cls");
         case 10:
             do {
                 system("cls");
                 cout << endl << endl;
-                cout << "    Saber cuanto dinero recaudó hoy el hotel" << endl;
+                cout << "    Saber cuanto dinero recaudï¿½ hoy el hotel" << endl;
                 cout << "    ============================================================" << endl;
-                cout << "    1.  Con los clientes, “TODO INCLUIDO”" << endl;
-                cout << "    2.  Con los clientes, “Sin TODO INCLUIDO” " << endl;
+                cout << "    1.  Con los clientes, ï¿½TODO INCLUIDOï¿½" << endl;
+                cout << "    2.  Con los clientes, ï¿½Sin TODO INCLUIDOï¿½ " << endl;
                 cout << "    3.  Con todos los clientes que hay en el hotel " << endl;
                 cout << "    4. salir" << endl;
                 cout << "    ============================================================" << endl;
