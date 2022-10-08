@@ -26,7 +26,14 @@ Chofer* Vehiculo::getChofer() { return choferptr; }
 void Vehiculo::setChofer(Chofer* choferP) { choferptr = choferP; }
 
 Cobro* Vehiculo::getCobro() { return cobroptr; }
-void Vehiculo::setCobro(Cobro* cobroP) {cobroptr = cobroP; }
+void Vehiculo::setCobro(Cobro* cobroP) {
+    double aux=0;
+    if(Vehiculo::getTonelaje()<1.0){
+        aux= Cobro::getMonto()
+    }else{
+
+    }
+    cobroptr = cobroP; }
 
 
 

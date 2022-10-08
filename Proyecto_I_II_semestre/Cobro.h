@@ -16,6 +16,8 @@ public:
     int getEntrada();
     int getSalida();
 
+    void setMonto(double MontoF);
+
     double getMonto();
 };
 
