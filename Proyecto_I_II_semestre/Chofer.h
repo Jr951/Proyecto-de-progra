@@ -1,4 +1,7 @@
 #pragma once
+#include <string>
+using namespace std;
+
 class Chofer
 {
 private:
@@ -6,6 +9,9 @@ private:
 	string nombre;
 
 public:
+
+	Chofer(string cedula, string nombre);
+	~Chofer();
 
 	void setCedula(string cedula);
 	void setNombre(string nombre);
