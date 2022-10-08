@@ -1,19 +1,19 @@
 #include "InfoDelCampo.h"
 
-
-InfoDelCampo::InfoDelCampo(int *value) {
-
+InfoDelCampo::InfoDelCampo(int numeroP, char estadoP, Vehiculo** veh1){
+	numero = numeroP;
+	estado = estadoP;
+	veh = veh1;
 }
+InfoDelCampo::~InfoDelCampo(){}
 
-void InfoDelCampo::setNCampo(int *value) {
+void InfoDelCampo::setNumero(int numeroP) { numero = numeroP; }
+void InfoDelCampo::setestado(char estadoP) { estado = estadoP; }
+void InfoDelCampo::setTam(int tamm) { tam = tamm; }
+void InfoDelCampo::setcant(int canti) { cant = canti; }
 
-}
 
-int *InfoDelCampo::getNCampo() {
-
-    return nullptr;
-}
-
-InfoDelCampo::~InfoDelCampo() {
-
-}
+int InfoDelCampo::getNumero() { return numero; }
+char InfoDelCampo::getEstado() { return estado; }
+int InfoDelCampo::getTam() { return tam; }
+int InfoDelCampo::getCant() { return cant; }

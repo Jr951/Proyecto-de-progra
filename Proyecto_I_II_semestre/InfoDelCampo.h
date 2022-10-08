@@ -22,7 +22,7 @@ public:
 	void setcant(int cant);
 	void setNCampo(int* value);
 
-	int getNmero();
+	int getNumero();
 	char getEstado();
 	int getTam();
 	int getCant();
