@@ -2,12 +2,13 @@
 #include <string>
 using namespace std;
 
-Vehiculo::Vehiculo(string marcaP, string placaP, float tonelajeP, string colorP, Chofer* choferP) {
+Vehiculo::Vehiculo(string marcaP, string placaP, float tonelajeP, string colorP, Chofer* choferP, Cobro* cobroP) {
 	marca = marcaP;
 	placa = placaP; 
 	tonelaje = tonelajeP;  
 	color = colorP; 
 	choferptr = choferP;
+	cobroptr = cobroP;
 }
 Vehiculo::~Vehiculo() {}
 
@@ -23,6 +24,9 @@ string Vehiculo::getColor() { return color; }
 
 Chofer* Vehiculo::getChofer() { return choferptr; }
 void Vehiculo::setChofer(Chofer* choferP) { choferptr = choferP; }
+
+Cobro* Vehiculo::getCobro() { return cobroptr; }
+void Vehiculo::setCobro(Cobro* cobroP) { cobroptr = cobroP; }
 
 
 
