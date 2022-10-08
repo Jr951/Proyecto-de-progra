@@ -1,5 +1,7 @@
 #pragma once
 #include "Vehiculo.h"
+#include<sstream>
+#include<string>
 
 class InfoDelCampo
 {
@@ -30,5 +32,6 @@ public:
 	Vehiculo** getVehiculo();
 	void setVehiculo(Vehiculo** veh);
 
+	string toString();
 
 };

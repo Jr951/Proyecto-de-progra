@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <sstream>
 using namespace std;
 
 class Chofer
@@ -19,5 +20,6 @@ public:
 	string getCedula();
 	string getNombre();
 
+	string toString();
 };
 
