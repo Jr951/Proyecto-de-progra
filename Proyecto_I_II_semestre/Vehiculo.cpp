@@ -1,5 +1,4 @@
 #include "Vehiculo.h"
-#include "Chofer.cpp"
 #include <string>
 using namespace std;
 
@@ -8,7 +7,7 @@ Vehiculo::Vehiculo(string marcaP, string placaP, float tonelajeP, string colorP,
 	placa = placaP; 
 	tonelaje = tonelajeP;  
 	color = colorP; 
-	chofer = choferP;
+	choferptr = choferP;
 }
 Vehiculo::~Vehiculo() {}
 
@@ -22,8 +21,8 @@ string Vehiculo::getPlaca() { return placa; }
 float Vehiculo::getTonelaje() {return tonelaje ; }
 string Vehiculo::getColor() { return color; }
 
-Chofer* Vehiculo::getChofer() { return chofer; }
-void Vehiculo::setChofer(Chofer* choferP) { chofer = choferP; }
+Chofer* Vehiculo::getChofer() { return choferptr; }
+void Vehiculo::setChofer(Chofer* choferP) { choferptr = choferP; }
 
 
 

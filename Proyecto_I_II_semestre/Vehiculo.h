@@ -8,12 +8,12 @@ class Vehiculo
 	string placa;
 	float tonelaje;
 	string color;
-	Chofer* chofer;
+	Chofer* choferptr = NULL;
 	
 
 
 public:
-	Vehiculo(string marca , string placa , float tonelaje , string color , Chofer* chofer );
+	Vehiculo(string marca , string placa , float tonelaje , string color , Chofer* choferptr );
 	~Vehiculo();
 
 	void setMarca(string marca);
