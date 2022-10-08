@@ -2,8 +2,6 @@
 class Cobro
 {
 private:
-    int prueba = 0;
-
     int HoraEntrada=0;
     int MinutoEntrada=0;
 
@@ -17,16 +15,11 @@ public:
     Cobro();
     Cobro(int HoraEntrada,int MinutoEntrada,int HoraSalida,int MinutoSalida,double monto);
 
-    void setHoraEntrada(int HoraEntradaP);
-    void setMinutoEntrada(int MinutoEntradaP);
-    void setHoraSalida(int HoraSalidaP);
-    void setMinutoSalida(int MinutoSalidaP);
-    void setMonto(double MontoP);
+    void setEntrada();
+    void setSalida();
 
-    int getHoraEntrada();
-    int getMinuoEntrada();
-    int getHoraSalida();
-    int getMinutoSalida();
+    int getEntrada();
+    int getSalida();
 
     double getMonto();
 };
