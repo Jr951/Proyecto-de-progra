@@ -1,11 +1,19 @@
 #include "InfoDelCampo.h"
 
-InfoDelCampo::InfoDelCampo()
-{
+
+InfoDelCampo::InfoDelCampo(int *value) {
 
 }
 
-InfoDelCampo::~InfoDelCampo()
-{
+void InfoDelCampo::setNCampo(int *value) {
+
+}
+
+int *InfoDelCampo::getNCampo() {
+
+    return nullptr;
+}
+
+InfoDelCampo::~InfoDelCampo() {
 
 }

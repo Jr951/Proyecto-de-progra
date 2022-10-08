@@ -1,7 +1,7 @@
 #include"Parqueo.h"
 
 int main(){
-Parqueo Contenedor(3);
+	Parqueo Contenedor(3);
 
-return 0;
+	return 0;
 };
