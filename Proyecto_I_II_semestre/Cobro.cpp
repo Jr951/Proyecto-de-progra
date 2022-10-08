@@ -8,26 +8,25 @@ double Cobro::getMonto() {
     return monto;
 }
 
-void Cobro::setEntrada(int HoraEP,int MinutoEP) {
-HoraE=HoraEP;
-MinutoE=MinutoEP;
+void Cobro::setEntrada(int HoraEP, int MinutoEP) {
+    HoraE = HoraEP;
+    MinutoE = MinutoEP;
 }
 
-void Cobro::setSalida(int HoraSP,int MinutoSP) {
-HoraS=HoraSP;
-MinutoS=MinutoSP;
+void Cobro::setSalida(int HoraSP, int MinutoSP) {
+    HoraS = HoraSP;
+    MinutoS = MinutoSP;
 }
 
 int Cobro::getEntrada() {
-    return (HoraE*100)+MinutoE;
+    return (HoraE * 100) + MinutoE;
 }
 
 int Cobro::getSalida() {
-    return (HoraS*100)+MinutoS;
+    return (HoraS * 100) + MinutoS;
 }
 
 void Cobro::setMonto(double MontoF) {
-    monto=MontoF;
+    monto = MontoF;
 }
-
 

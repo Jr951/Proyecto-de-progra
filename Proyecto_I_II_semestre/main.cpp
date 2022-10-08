@@ -6,7 +6,7 @@ int main(){
 	Parqueo Contenedor(3);
     int opcion = 0;
 
-    new Cobro(2,3,0);
+ //   new Cobro(2, 3, 0);
 
     do {
 
