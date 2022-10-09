@@ -1,4 +1,5 @@
 #include "InfoDelCampo.h"
+#include <sstream>
 
 InfoDelCampo::InfoDelCampo(int numeroP, char estadoP, Vehiculo** veh1){
 	numero = numeroP;

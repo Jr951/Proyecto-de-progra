@@ -5,6 +5,7 @@ using namespace std;
 int main(){
     int espacio = 0;
     int opcion = 0;
+    InfoDelCampo* p = nullptr;
 
     cout << " Digite la cantidad de espacios para el parqueo " << endl;
     cin >> espacio;
@@ -14,27 +15,27 @@ int main(){
 
         system("cls");
         cout << endl << endl;
-        cout << "  Control de Parqueo   " << endl;
-     
+        cout << "                             Control de Parqueo   " << endl;
+
         cout << "    ============================================================" << endl;
         cout << "    1.  Ver todos los campos de Parqueo" << endl;
         cout << "    2.  Ver campos ocupados" << endl;
         cout << "    3.  Ver campos en mantenimiento" << endl;
         cout << "    4.  Ingresar un vehiculo al parqueo" << endl;
         cout << "    5.  Cancelar la estancia en el lugar. Realizar el debido cobro del alquiler" << endl;
-        cout << "    6.  Ver solo los campos que est�n libres" << endl;
+        cout << "    6.  Ver solo los campos que estan libres" << endl;
         cout << "    7.  Saber la cantidad de vehiculos que existen en el parqueo" << endl;
         cout << "    8.  Saber la cantidad de campos libres en el parqueo" << endl;
         cout << "    9.  Saber la cantidad de campos ocupados en el parqueo" << endl;
         cout << "    10.Saber la cantidad de campos en mantenimiento en el parqueo" << endl;
-        cout << "    11. Saber la cantidad de veh�culos que han ingresado en el dia" << endl;
+        cout << "    11. Saber la cantidad de vehiculos que han ingresado en el dia" << endl;
         cout << "    12. Saber la cantidad de dinero que ha ingresado al parqueo este dia" << endl;
         cout << "    13. Saber la cantidad de dinero que ha ingresado, por un solo campo" << endl;
-        cout << "    14. Saber le tonelaje de los veh�culos que hacen m�s uso del parqueo" << endl;
+        cout << "    14. Saber le tonelaje de los veh�culos que hacen mas uso del parqueo" << endl;
         cout << "    15. Saber el porcentaje de ocupacion que tiene el parqueo" << endl;
         cout << "    16. - Mostrar la informacion de los vehiculos que han estado en un determinado campo" << endl;
-        cout << "    17. - Mostar la informaci�n de todos los vehiculos del parqueo" << endl;
-        cout << "    18. Mostrar los veh�culos que se encuentran en el rango de tonelaje de 1.0 a 1.5 " << endl;
+        cout << "    17. - Mostar la informacion de todos los vehiculos del parqueo" << endl;
+        cout << "    18. Mostrar los vehiculos que se encuentran en el rango de tonelaje de 1.0 a 1.5 " << endl;
         cout << "    19. salir" << endl;
         cout << "    ============================================================" << endl;
         cout << " Digite una opcion" << endl;
@@ -179,4 +180,4 @@ int main(){
     } while (opcion <= 19 && opcion >= 0);
 
 	return 0;
-};
+}

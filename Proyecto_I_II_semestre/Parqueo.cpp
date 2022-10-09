@@ -1,5 +1,5 @@
 #include "Parqueo.h"
-
+#include <sstream>
 Parqueo::Parqueo() {
 
 }
