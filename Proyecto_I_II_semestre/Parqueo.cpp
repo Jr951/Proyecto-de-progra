@@ -25,6 +25,10 @@ void Parqueo::Ingresarinfo(InfoDelCampo* ptr) {
     }
 }
 
+void Parqueo::setMantenimiento(int pos)
+{
+}
+
 string Parqueo::camposOcupados() {
     stringstream s;
     int conteo = 0;
@@ -63,7 +67,4 @@ string Parqueo::toString()
 
     }
     return s.str();
-}
-void Parqueo::setMantenimiento(int pos) {
-    vect[pos]->setestado('O');
 }

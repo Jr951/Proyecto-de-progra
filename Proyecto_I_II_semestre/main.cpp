@@ -6,7 +6,7 @@ int main(){
     int espacio = 0;
     int opcion = 0;
     InfoDelCampo* p = nullptr;
-    //hola
+    
     cout << " Digite la cantidad de espacios para el parqueo " << endl;
     cin >> espacio;
     Parqueo* c = new Parqueo(espacio);
