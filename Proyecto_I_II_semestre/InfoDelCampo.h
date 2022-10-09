@@ -15,6 +15,8 @@ private:
 
 public:
 
+	InfoDelCampo();
+
 	InfoDelCampo(int numeroP, char estadoP,Vehiculo** veh1);
 	~InfoDelCampo();
 
