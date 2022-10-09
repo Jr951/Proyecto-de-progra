@@ -34,7 +34,7 @@ int main(){
         cout << "    14. Saber le tonelaje de los veh�culos que hacen mas uso del parqueo" << endl;
         cout << "    15. Saber el porcentaje de ocupacion que tiene el parqueo" << endl;
         cout << "    16. - Mostrar la informacion de los vehiculos que han estado en un determinado campo" << endl;
-        cout << "    17. - Mostar la informacion de todos los vehiculos del parqueo" << endl;
+        cout << "    17. - Mostar la informacio n de todos los vehiculos del parqueo" << endl;
         cout << "    18. Mostrar los vehiculos que se encuentran en el rango de tonelaje de 1.0 a 1.5 " << endl;
         cout << "    19. salir" << endl;
         cout << "    ============================================================" << endl;
@@ -174,8 +174,8 @@ int main(){
 
             }
         }
-
-        system("pause");*/
+        */
+        system("pause");
 
     } while (opcion <= 19 && opcion >= 0);
 
