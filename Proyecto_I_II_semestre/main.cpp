@@ -10,9 +10,26 @@ int main(){
     cout << " Digite la cantidad de espacios para el parqueo " << endl;
     cin >> espacio;
     Parqueo* c = new Parqueo(espacio);
-
+    
+    cout << "Digite la cantidad de espacios en mantenimiento:";
+    espacio = 0;
+    cin >> espacio;
+    
+    system("cls");
+    if (espacio >= 1) {
+        int aux = 0;
+        for (int i = 0; i <= espacio; i = i + 1)
+        {
+            cout << "Ingrese la posicion del espacio ocupado: " << endl;
+            cin >> aux;
+            c->mantenimiento(aux);
+            
+            cout << "1" << endl;
+            system("cls");
+        }
+    }
+    
     do {
-
         system("cls");
         cout << endl << endl;
         cout << "                             Control de Parqueo   " << endl;
@@ -57,6 +74,9 @@ int main(){
               cout << "Espacios que estan en Mantenimiento: " << endl;
               cout << c->camposMant() << endl;
               break; system("cls");
+          case 4:
+              cout << "Ingrese Número de placa: " << endl;
+              
         }
     /*case 4:
             int cantCamas;

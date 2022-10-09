@@ -53,6 +53,11 @@ string Parqueo::camposMant() {
 
     return s.str();
 }
+void Parqueo::mantenimiento(int pos){
+
+    vect[pos]->setestado('M');
+
+}
 
 string Parqueo::toString()
 {
