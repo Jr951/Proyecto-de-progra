@@ -47,12 +47,13 @@ int main(){
             cout << " Mostrando los campos del parqueo" << endl;
             cout << c->toString() << endl;
             break; system("cls");
-        }
- /*       case 2:
-            cout << "Habitaciones en estado de mantenimiento: " << endl;
-            cout << c->cuantHabiMant() << endl;
+
+        case 2:
+            cout << "Espacios Ocupados: " << endl;
+            cout << c->camposOcupados() << endl;
             break; system("cls");
-        case 3:
+        }
+        /* case 3:
             cout << "Habitaciones que se encuentran ocupadas: " << endl;
             cout << c->cuantHabiOcup() << endl;
             break; system("cls");

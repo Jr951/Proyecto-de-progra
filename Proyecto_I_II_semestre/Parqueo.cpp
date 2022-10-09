@@ -25,6 +25,35 @@ void Parqueo::Ingresarinfo(InfoDelCampo* ptr) {
     }
 }
 
+string Parqueo::camposOcupados() {
+    stringstream s;
+    int conteo = 0;
+    for (int a = 0; a < tam; a++) {
+
+        if (vect[a]->getEstado() == 'O') {
+            conteo++;
+        }
+
+    }
+    s << "Cantidad de camas en mantenimiento:   " << conteo << endl;
+
+    return s.str();
+}
+
+string Parqueo::camposMant() {
+    stringstream s;
+    int conteo = 0;
+    for (int a = 0; a < tam; a++) {
+        if (vect[a]->getEstado() == 'M') {
+            conteo++;
+        }
+
+    }
+    s << "Cantidad de camas en mantenimiento:   " << conteo << endl;
+
+    return s.str();
+}
+
 string Parqueo::toString()
 {
     stringstream s;

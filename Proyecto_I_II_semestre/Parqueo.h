@@ -7,6 +7,8 @@ public:
     Parqueo(int tam);
     ~Parqueo();
     void Ingresarinfo(InfoDelCampo*);
+    string camposOcupados();
+    string camposMant();
     string toString();
 private:
     InfoDelCampo** vect;
