@@ -5,11 +5,28 @@ using namespace std;
 int main(){
     int espacio = 0;
     int opcion = 0;
+    int numcampo = 0;
+    char estado = ' ';
+    string marca = "";
+    string placa = "";
+    float tonelaje = 0.0;
+    string color = "";
+    string cedula = "";
+    string nombre = "";
+    int hora = 0;
+    int minuto = 0;
+    double montopagar = 0.0;
+
+    Chofer* choferptr = nullptr;
+    Cobro* cobroptr = nullptr;
+
+    Vehiculo* V = nullptr;
     InfoDelCampo* p = nullptr;
     
     cout << " Digite la cantidad de espacios para el parqueo " << endl;
     cin >> espacio;
     Parqueo* c = new Parqueo(espacio);
+    Parqueo* c1 = nullptr;
     
     cout << "Digite la cantidad de espacios en mantenimiento:";
     espacio = 0;
@@ -74,15 +91,49 @@ int main(){
               cout << "Espacios que estan en Mantenimiento: " << endl;
               cout << c->camposMant() << endl;
               break; system("cls");
-        }
-    /*case 4:
-            int cantCamas;
-            cout << "Habitaciones disponibles segun la cantidad de camas: " << endl;
-            cout << "Ingresa la cantidad de camas requeridas" << endl;
-            cin >> cantCamas;
-            cout << c->cuantHabiXCantCamas(cantCamas) << endl;
+        
+        case 4:
+           
+            cout << "Agregue los siguientes Datos" << endl;
+            cout << "Numero del Campo " << endl;
+            cin >> numcampo;
+            cout << "Estado del Campo " << endl;
+            cin >> estado;
+            cout << "Ingrese los siguientes datos del Chofer " << endl;
+            cout << "Numero de Cedula " << endl;
+            cin >> cedula;
+            cout << "Nombre del Chofer " << endl;
+            cin >> nombre;
+            cout << "Ingrese los siguientes datos del Vehiculo " << endl;
+            cout << "Numero de Marca " << endl;
+            cin >> marca;
+            cout << "Numero de Placa " << endl;
+            cin >> placa;
+            cout << "Peso del Vehiculo " << endl;
+            cin >> tonelaje;
+            cout << "Color del Vehiculo " << endl;
+            cin >> color;
+            cout << "Numero de Marca " << endl;
+            cin >> marca;
+            cout << "La hora entrada incluyendo minutos " << endl;
+            cin >> hora;
+            cin >> minuto;
+            cout << "El monto que se le va cobrar " << endl;
+            cin >> montopagar;
+
+
+
+            Chofer* choferptr = new Chofer(cedula,nombre);
+            Cobro* cobroptr = new Cobro(hora,minuto,montopagar);
+            
+            Vehiculo* V = new Vehiculo(marca,placa,tonelaje,color,choferptr,cobroptr);
+            
+            InfoDelCampo* p = new InfoDelCampo(numcampo,estado,V);
+            Parqueo* c1 = new Parqueo();
+            cout << c1->Ingresarinfo(p) << endl;
             break; system("cls");
-        case 5:
+            }
+     /*   case 5:
             cout << "Realizando la ocupacion de la habitacion: " << endl;
             cout << "Digite el Nombre del Cliente" << endl;
             cin >> nombre;
