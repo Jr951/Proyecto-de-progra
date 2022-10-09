@@ -29,7 +29,7 @@ void Vehiculo::setChofer(Chofer* choferP) { choferptr = choferP; }
 Cobro* Vehiculo::getCobro() { return cobroptr; }
 void Vehiculo::setCobro(Cobro* cobroP) {
     int aux;
-    aux = Cobro::getHoraE();
+    aux = cobroP->getHoraE();
     if(Vehiculo::getTonelaje()<1.0){
         cobroP->setMonto(aux*100);
     }else if(Vehiculo::getTonelaje()>=1.0&&Vehiculo::getTonelaje()<=1.5){

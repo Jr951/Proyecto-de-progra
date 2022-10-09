@@ -30,3 +30,7 @@ void Cobro::setMonto(double MontoF) {
     monto = MontoF;
 }
 
+void Cobro::setHoraE(int horaE) {
+    HoraE = horaE;
+}
+

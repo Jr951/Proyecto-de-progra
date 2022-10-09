@@ -16,6 +16,9 @@ public:
 
     int getEntrada();
     int getSalida();
+    int getHoraE();
+
+    void setHoraE(int horaE);
 
     void setMonto(double MontoF);
 

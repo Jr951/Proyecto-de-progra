@@ -6,9 +6,8 @@ public:
     Parqueo();
     Parqueo(int tam);
     ~Parqueo();
-private:
+    Parqueo **vect;
 private:
 #define TAM 5
-    Parqueo **vect;
 };
 
