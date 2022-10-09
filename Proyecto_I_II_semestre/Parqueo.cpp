@@ -64,4 +64,6 @@ string Parqueo::toString()
     }
     return s.str();
 }
-
+void Parqueo::setMantenimiento(int pos) {
+    vect[pos]->setestado('O');
+}
