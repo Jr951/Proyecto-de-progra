@@ -34,6 +34,6 @@ public:
 	Cobro* getCobro();
 	void setCobro(Cobro* cobroptr);
 
-	
+	string toString();
 };
 

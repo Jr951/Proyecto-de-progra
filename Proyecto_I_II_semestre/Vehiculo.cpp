@@ -44,6 +44,17 @@ void Vehiculo::setCobro(Cobro* cobroP) {
     }
     cobroptr = cobroP; }
 
+string Vehiculo::toString()
+{
+    stringstream s;
+    s << "\nMarca: " << marca
+        << "\nPlaca: " << placa
+        << "\nTonelaje: " << tonelaje
+        << "\nChofer: " << choferptr->toString()
+        << "\nChofer: " << cobroptr->toString() << "\n\n";
+    return s.str();
+}
+
 
 
 
