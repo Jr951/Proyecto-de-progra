@@ -2,7 +2,7 @@
 class Cobro
 {
 private:
-    int HoraE, MinutoE,HoraS,MinutoS;
+    static int HoraE, MinutoE,HoraS,MinutoS;
     double monto=0;
 
 public:
@@ -15,6 +15,7 @@ public:
 
     int getEntrada();
     int getSalida();
+    static int getHoraE();
 
     void setMonto(double MontoF);
 

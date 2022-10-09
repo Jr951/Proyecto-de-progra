@@ -1,5 +1,6 @@
 #include "Vehiculo.h"
 #include <string>
+#include "Cobro.h"
 using namespace std;
 
 Vehiculo::Vehiculo(string marcaP, string placaP, float tonelajeP, string colorP, Chofer* choferP, Cobro* cobroP) {
@@ -27,11 +28,18 @@ void Vehiculo::setChofer(Chofer* choferP) { choferptr = choferP; }
 
 Cobro* Vehiculo::getCobro() { return cobroptr; }
 void Vehiculo::setCobro(Cobro* cobroP) {
-    double aux=0;
+    int aux;
+    aux = Cobro::getHoraE();
     if(Vehiculo::getTonelaje()<1.0){
-        aux= Cobro::getMonto()
+        cobroP->setMonto(aux*100);
+    }else if(Vehiculo::getTonelaje()>=1.0&&Vehiculo::getTonelaje()<=1.5){
+        cobroP->setMonto(aux*100+((aux*100)*0.05));
+    }else if(Vehiculo::getTonelaje()>=1.6&&Vehiculo::getTonelaje()<=3.5){
+        cobroP->setMonto(aux*100+((aux*100)*0.1));
+    }else if(Vehiculo::getTonelaje()>=3.6&&Vehiculo::getTonelaje()<=5.0){
+        cobroP->setMonto(aux*100+((aux*100)*0.15));
     }else{
-
+        cobroP->setMonto(aux*100+((aux*100)*0.2));
     }
     cobroptr = cobroP; }
 
