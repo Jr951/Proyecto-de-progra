@@ -1,5 +1,6 @@
 #pragma once
-
+using namespace std;
+#include <string>
 class Cobro
 {
 private:
@@ -19,4 +20,7 @@ public:
 
     void setMonto(double MontoF);
     double getMonto();
+
+    string toString();
+
 };

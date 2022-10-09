@@ -1,5 +1,5 @@
 #include "Cobro.h"
-
+#include <sstream>
 Cobro::Cobro() {}
 
 Cobro::Cobro(int Hora, int Minuto ,double monto) {}
@@ -25,6 +25,14 @@ void Cobro::setMonto(double MontoF) {
 double Cobro::getMonto()
 {
     return monto;
+}
+
+string Cobro::toString()
+{
+    stringstream s;
+    s << "\n Hora : " << hora << ":" << minuto << "\n";
+    s << "\nMonto: " << monto;
+    return s.str();
 }
 
 
