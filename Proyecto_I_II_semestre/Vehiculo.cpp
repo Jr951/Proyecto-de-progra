@@ -30,7 +30,7 @@ Cobro* Vehiculo::getCobro() { return cobroptr; }
 
 void Vehiculo::setCobro(Cobro* cobroP) {
     int aux;
-    aux = cobroP->getHoraE();
+    aux = cobroP->getHora();
     if(Vehiculo::getTonelaje()<1.0){
         cobroP->setMonto(aux*100);
     }else if(Vehiculo::getTonelaje()>=1.0&&Vehiculo::getTonelaje()<=1.5){

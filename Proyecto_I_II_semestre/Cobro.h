@@ -3,24 +3,20 @@
 class Cobro
 {
 private:
-    int HoraE, MinutoE, HoraS, MinutoS;
+    int hora, minuto;
     double monto = 0;
 
 public:
 
     Cobro();
-    Cobro(int HoraE, int MinutoE, int HoraSalida, int MinutoSalida, double monto);
+    Cobro(int hora, int minuto,double monto);
 
-    void setEntrada(int HoraE, int MinutoE);
-    void setSalida(int HoraS, int MinutoS);
+    void setHora(int);
+    void setMinuto(int);
 
-    int getEntrada();
-    int getSalida();
-    int getHoraE();
-
-    void setHoraE(int horaE);
+    int getHora();
+    int getMinuto();
 
     void setMonto(double MontoF);
-
     double getMonto();
 };
