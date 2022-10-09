@@ -22,6 +22,7 @@ int main(){
         {
             cout << "Ingrese la posicion del espacio ocupado: " << endl;
             cin >> aux;
+
             c->setMantenimiento(aux);
             cout << "1" << endl;
             system("cls");
