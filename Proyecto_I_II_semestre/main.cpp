@@ -52,12 +52,13 @@ int main(){
             cout << "Espacios Ocupados: " << endl;
             cout << c->camposOcupados() << endl;
             break; system("cls");
+        
+          case 3:
+              cout << "Espacios que estan en Mantenimiento: " << endl;
+              cout << c->camposMant() << endl;
+              break; system("cls");
         }
-        /* case 3:
-            cout << "Habitaciones que se encuentran ocupadas: " << endl;
-            cout << c->cuantHabiOcup() << endl;
-            break; system("cls");
-        case 4:
+    /*case 4:
             int cantCamas;
             cout << "Habitaciones disponibles segun la cantidad de camas: " << endl;
             cout << "Ingresa la cantidad de camas requeridas" << endl;
