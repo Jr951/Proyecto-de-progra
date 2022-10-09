@@ -6,8 +6,13 @@ public:
     Parqueo();
     Parqueo(int tam);
     ~Parqueo();
-    Parqueo **vect;
+    void Ingresarinfo(InfoDelCampo*);
+    string toString();
 private:
-#define TAM 5
+    InfoDelCampo** vect;
+    int cant;
+    int tam;
+
+
 };
 

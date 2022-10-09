@@ -18,7 +18,7 @@ char InfoDelCampo::getEstado() { return estado; }
 int InfoDelCampo::getTam() { return tam; }
 int InfoDelCampo::getCant() { return cant; }
 
-string InfoDelCampo::toString() {
+string InfoDelCampo::toStringInfoDelCampo() {
 	stringstream s;
 	s << "Numero: " << numero << endl;
 	s << "Estado: " << estado << endl;

@@ -26,6 +26,11 @@ int Cobro::getSalida() {
     return (HoraS * 100) + MinutoS;
 }
 
+int Cobro::getHoraE()
+{
+    return 0;
+}
+
 void Cobro::setMonto(double MontoF) {
     monto = MontoF;
 }

@@ -3,10 +3,12 @@
 using namespace std;
 
 int main(){
-	Parqueo parqueoContenedor(10);
+    int espacio = 0;
     int opcion = 0;
 
- //   new Cobro(2, 3, 0);
+    cout << " Digite la cantidad de espacios para el parqueo " << endl;
+    cin >> espacio;
+    Parqueo* c = new Parqueo(espacio);
 
     do {
 
@@ -38,13 +40,14 @@ int main(){
         cout << " Digite una opcion" << endl;
         cin >> opcion;
 
- /*       switch (opcion) {
+        switch (opcion) {
             system("pause");
         case 1:
-            cout << " Mostrando cantidad de habitaciones libres" << endl;
-            cout << c->cuantasHabiLibres() << endl;
+            cout << " Mostrando los campos del parqueo" << endl;
+            cout << c->toString() << endl;
             break; system("cls");
-        case 2:
+        }
+ /*       case 2:
             cout << "Habitaciones en estado de mantenimiento: " << endl;
             cout << c->cuantHabiMant() << endl;
             break; system("cls");

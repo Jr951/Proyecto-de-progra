@@ -32,6 +32,6 @@ public:
 	Vehiculo** getVehiculo();
 	void setVehiculo(Vehiculo** veh);
 
-	string toString();
+	string toStringInfoDelCampo();
 
 };
