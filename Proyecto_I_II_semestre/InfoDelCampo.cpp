@@ -17,3 +17,11 @@ int InfoDelCampo::getNumero() { return numero; }
 char InfoDelCampo::getEstado() { return estado; }
 int InfoDelCampo::getTam() { return tam; }
 int InfoDelCampo::getCant() { return cant; }
+
+string InfoDelCampo::toString() {
+	stringstream s;
+	s << "Numero: " << numero << endl;
+	s << "Estado: " << estado << endl;
+	s << "Vehiculo " << veh << endl;
+	return s.str();
+}

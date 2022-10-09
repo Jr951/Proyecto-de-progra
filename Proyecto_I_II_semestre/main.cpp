@@ -3,10 +3,10 @@
 using namespace std;
 
 int main(){
-	Parqueo Contenedor(3);
+	Parqueo parqueoContenedor(10);
     int opcion = 0;
 
-    new Cobro(2,3,0);
+ //   new Cobro(2, 3, 0);
 
     do {
 
