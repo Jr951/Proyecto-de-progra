@@ -35,7 +35,7 @@ string Parqueo::camposOcupados() {
         }
 
     }
-    s << "Cantidad de camas en mantenimiento:   " << conteo << endl;
+    s << "Cantidad de espacios ocupados:   " << conteo << endl;
 
     return s.str();
 }
@@ -49,7 +49,7 @@ string Parqueo::camposMant() {
         }
 
     }
-    s << "Cantidad de camas en mantenimiento:   " << conteo << endl;
+    s << "Cantidad de espacios en mantenimiento:   " << conteo << endl;
 
     return s.str();
 }
